@@ -1,0 +1,108 @@
+<!-- activity_status.xml -->
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:id="@+id/status_image"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:src="@android:drawable/ic_menu_info_details"
+        android:layout_height="50dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status: "
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/statusValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="normal"/>
+
+    </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/txnIdTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaction Details: "
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:id="@+id/progress"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content">
+
+    </ProgressBar>
+
+
+        <TextView
+            android:id="@+id/TransactionIdValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+
+            android:textSize="15sp"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="normal"/>
+
+
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:background="@drawable/button_rect"
+        android:layout_height="wrap_content"
+        android:text="Go Home" />
+
+
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,186 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/authToken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Auth Token"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/authTokenEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_rect"
+            android:hint="Enter Auth Token"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/returnUrlTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Return URL"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/returnUrlEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_rect"
+            android:hint="Enter Return URL"
+            android:padding="10dp"
+            android:text="https://cardse.co"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/callbackUrlTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Callback URL"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/callbackUrlEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_rect"
+            android:hint="Enter Callback URL"
+            android:padding="10dp"
+            android:text="https://cardse.co"
+            android:textColor="@color/black" />
+
+
+        <TextView
+            android:id="@+id/amountTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amount"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/amountEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_rect"
+            android:hint="Enter Amount"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:text="6.0"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tradeNumberTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trade Number"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/tradeNumberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_rect"
+            android:hint="Enter Trade Number"
+            android:inputType="numberDecimal"
+            android:maxLength="32"
+            android:padding="10dp"
+            android:text="11212121212121211"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/mobileTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/mobileEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_rect"
+            android:hint="Enter Mobile"
+            android:inputType="number"
+            android:maxLength="10"
+            android:padding="10dp"
+            android:text="9999999999"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/emailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_rect"
+            android:hint="Enter Email"
+            android:padding="10dp"
+            android:text="testcustomer@gmail.com"
+            android:textColor="@color/black"
+            android:textColorHint="@android:color/darker_gray" />
+
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone">
+
+        </ProgressBar>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_rect"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

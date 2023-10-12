@@ -1,0 +1,157 @@
+<!-- activity_main.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="User Name"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/userNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_rect"
+            android:hint="Enter User Name"
+            android:padding="10dp"
+            android:text="65000a454aecb1917bda9eb8"
+            android:textColor="@color/black" />
+
+
+        <TextView
+            android:id="@+id/passwordTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_rect"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:text="Wna3v6QSERoR6OtUVFl1"
+                android:textColor="@color/black"
+                app:passwordToggleEnabled="true" />
+
+            <Button
+                android:id="@+id/show_hide_password"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/hide_password">
+
+            </Button>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/pubKeyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Public Key"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/pubkeyEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_rect"
+            android:hint="Enter Public Key"
+            android:padding="10dp"
+            android:text="MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA43TsgPJ1r1/y6A0awljtsL4uXvxkC8n7c0VIiCMU8/3n76TrpQdzks748PIOpWPhic87YsM9X7WHZF6MMfMlloNy7BGq+4s49CnLCqjPvL1R+J9vXPMKI1YvdnYzpmEO5hdxBB+6lpQc8i03ETGjdbX49e2DEMyEMW90dcbOuiKQiaABO7zNdfuWA8I54n3k/QMpBaL1mjJc+miFzGwsU4N4Es/4AuDBRMZPzv7vYTAi9x175UB3gJDakkmhi9CynGfSEiSrwgaY1e2/SEanploCGrxPs+LE6LJFXISBhX0z0GkL33Uc9ZiibXBUNwtPpwhxUsGP6yFpQZtaHy6LmQIDAQAB"
+            android:textColor="@color/black" />
+
+        <CheckBox
+            android:id="@+id/isProd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:checked="false"
+            android:buttonTint="@color/purple_200"
+            android:text="isProd?">
+
+        </CheckBox>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_rect"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tokenTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Your Token (Click on text to copy to clipboard)"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tokenText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="40dp"
+            android:enabled="true"
+            android:padding="5dp"
+            android:text="Your Token "
+            android:textColor="@android:color/darker_gray"
+            android:textIsSelectable="true"
+            android:textStyle="normal"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone">
+
+        </ProgressBar>
+
+    </LinearLayout>
+</ScrollView>
